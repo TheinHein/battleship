@@ -1,0 +1,544 @@
+body {
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  letter-spacing: 3px;
+  color: rgb(245, 123, 42);
+  touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+h1,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  margin-left: 15px;
+}
+
+footer > p {
+  margin-right: 10px;
+}
+
+button {
+  width: fit-content;
+  height: 35px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.8em;
+  letter-spacing: 3px;
+  color: #f57b2a;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: none;
+  background: #1370ad;
+  background-image: -webkit-linear-gradient(top, #1370ad, #050e14);
+  background-image: -moz-linear-gradient(top, #1370ad, #050e14);
+  background-image: -ms-linear-gradient(top, #1370ad, #050e14);
+  background-image: -o-linear-gradient(top, #1370ad, #050e14);
+  background-image: linear-gradient(to bottom, #1370ad, #050e14);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  padding: 0px 10px;
+  text-decoration: none;
+  text-shadow: 1px 1px 3px #050e14;
+  border: 4px double #f57b2a;
+  position: relative;
+  top: 0;
+}
+
+button:hover {
+  background: #050e14;
+  background-image: -webkit-linear-gradient(top, #050e14, #1370ad);
+  background-image: -moz-linear-gradient(top, #050e14, #1370ad);
+  background-image: -ms-linear-gradient(top, #050e14, #1370ad);
+  background-image: -o-linear-gradient(top, #050e14, #1370ad);
+  background-image: linear-gradient(to bottom, #050e14, #1370ad);
+  text-decoration: none;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+nav,
+.pre-game .title,
+.pre-game .buttons {
+  height: 4%;
+  width: 100%;
+  background-color: #00385e;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  -webkit-box-shadow: 0px 2px 7px 2px #050e14;
+  box-shadow: 0px 2px 7px 2px #050e14;
+}
+
+main {
+  height: 93%;
+  background-color: #f57b2a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+footer {
+  background-color: #00385e;
+  height: 3%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 0.7em;
+}
+
+.pre-game-container,
+.notification-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f57b2a;
+  visibility: hidden;
+}
+
+.notification-container {
+  visibility: hidden;
+}
+
+.pre-game {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  background-color: #1370ad;
+}
+
+.pre-game img {
+  width: 80px;
+  margin-bottom: -12px;
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg)
+    brightness(95%) contrast(80%);
+}
+
+.pre-game .title {
+  margin-bottom: 10px;
+}
+.pre-game .title h3 {
+  font-size: 0.8em;
+  margin-left: 10px;
+}
+.pre-game .ship-placement {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.pre-game .preview-container {
+  width: 40%;
+}
+
+.pre-game .ships-container {
+  width: 40%;
+  height: 100%;
+  padding: 15px 20px;
+  background-color: #00385e;
+  font-size: 0.7em;
+  border-radius: 25px;
+  border: 7px double #f57b2a;
+  background: #012b47;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: inset 0px 0px 20px 3px #000000,
+    inset 0px 0px 20px 3px #000000;
+  box-shadow: inset 0px 0px 20px 3px #000000, inset 0px 0px 25px 3px #000000;
+  background: -moz-linear-gradient(45deg, #012b47 0%, #0f3f5e 100%);
+  background: -webkit-linear-gradient(45deg, #012b47 0%, #0f3f5e 100%);
+  background: linear-gradient(45deg, #012b47 0%, #0f3f5e 100%);
+}
+
+.pre-game .buttons button {
+  margin: 10px 0px;
+}
+
+.p1-container,
+.p2-container,
+.preview-container {
+  width: 300px;
+  height: 300px;
+  background-color: #012b47;
+  border-radius: 10px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 5px 5px 5px 0px #050e14, inset 4px 4px 15px 0px #050e14,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 5px 0px #050e14, inset 4px 4px 15px 0px #050e14,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.p1-container {
+  margin-top: -87px;
+  margin-bottom: -87px;
+  transform: scale(0.4);
+}
+
+.board {
+  color: #f57b2a;
+  font-size: 0.8em;
+  width: 90%;
+  height: 90%;
+  background-color: #012b47;
+  border-radius: 10px;
+  border-bottom-right-radius: 0px;
+  border-collapse: collapse;
+}
+
+.board td,
+.board th {
+  width: 9%;
+  height: 9%;
+}
+
+.board td {
+  border: 0.5px solid #f57b2a;
+}
+
+.ship-stat-container {
+  margin: 5px 0;
+  width: 300px;
+  height: 120px;
+  border-radius: 25px;
+  border: 7px double #f57b2a;
+  background: #012b47;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: inset 0px 0px 20px 3px #000000,
+    inset 0px 0px 20px 3px #000000;
+  box-shadow: inset 0px 0px 20px 3px #000000, inset 0px 0px 25px 3px #000000;
+  background: -moz-linear-gradient(45deg, #012b47 0%, #0f3f5e 100%);
+  background: -webkit-linear-gradient(45deg, #012b47 0%, #0f3f5e 100%);
+  background: linear-gradient(45deg, #012b47 0%, #0f3f5e 100%);
+}
+
+.ship-stat-container img {
+  width: 80px;
+  margin-bottom: -12px;
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg)
+    brightness(95%) contrast(80%);
+  /* filter: invert(31%) sepia(29%) saturate(4815%) hue-rotate(184deg); */
+}
+
+.ship-stat-container > div {
+  display: flex;
+  column-gap: 8px;
+}
+
+.ship-stat-container > div:first-child {
+  margin-top: -10px;
+  margin-bottom: -30px;
+}
+
+.ship-stat {
+  display: flex;
+  justify-content: center;
+}
+
+.ship-stat div {
+  display: flex;
+}
+
+.ship-stat div div {
+  width: 6px;
+  height: 6px;
+  border: 0.5px solid #00385e;
+  background-color: #f57b2a;
+}
+
+.zoom-in {
+  pointer-events: none;
+  animation: zoomIn 300ms ease-in-out forwards;
+}
+
+.zoom-out {
+  pointer-events: none;
+  animation: zoomOut 300ms ease-in-out forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+    margin-top: -87px;
+    margin-bottom: -87px;
+    transform: scale(0.4);
+  }
+  100% {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    transform: scale(1);
+    /* z-index: 1; */
+  }
+  100% {
+    margin-top: -87px;
+    margin-bottom: -87px;
+    transform: scale(0.4);
+    /* z-index: -1; */
+  }
+}
+
+@media (max-width: 280px) {
+  .p1-container,
+  .p2-container {
+    width: 270px;
+    height: 270px;
+    border: 2px solid black;
+  }
+
+  .ship-stat-container {
+    width: 260px;
+    margin: 5px 0;
+  }
+}
+
+@media (min-height: 667px) {
+  .ship-stat-container {
+    height: 100px;
+    margin: 3px 0;
+  }
+}
+
+@media (min-width: 280px) {
+  .pre-game .ship-placement {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 10px;
+  }
+
+  .pre-game .preview-container {
+    width: 90%;
+    height: 40%;
+  }
+
+  .pre-game .ships-container {
+    width: 70%;
+    height: 40%;
+  }
+
+  .pre-game .info {
+    display: none;
+  }
+}
+
+@media (min-width: 350px) {
+  .pre-game {
+    margin-top: 12px;
+  }
+  .pre-game .ship-placement {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 10px;
+  }
+
+  .pre-game .preview-container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .pre-game .ships-container {
+    width: 80%;
+  }
+
+  .pre-game .ships-container {
+    width: 250px;
+  }
+  .pre-game .info {
+    display: block;
+  }
+}
+
+@media (min-width: 680px) {
+  .pre-game .ship-placement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .pre-game .ship-placement .ships-container {
+    width: 200px;
+  }
+  .pre-game .info {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .p1-container,
+  .p2-container {
+    width: 430px;
+    height: 430px;
+    border: 2px solid black;
+  }
+  .pre-game .info {
+    display: block;
+  }
+
+  .pre-game {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .p1-container {
+    width: 430px;
+    height: 430px;
+    transform: scale(1);
+  }
+
+  .ship-stat-container {
+    width: 230px;
+    height: 300px;
+    display: flex;
+  }
+
+  .ship-stat-container > div {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .ship-stat-container > div:first-child {
+    height: 50px;
+  }
+
+  .ship-stat-container img {
+    width: 90px;
+  }
+
+  .ship-stat-container > div > div {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+  }
+
+  .ship-stat {
+    height: 25px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .pre-game .info {
+    display: block;
+  }
+
+  .pre-game {
+    width: 60%;
+  }
+}
+
+@media (min-width: 2048px) {
+  .pre-game {
+    width: 40%;
+  }
+}
+
+/* .pre-game-container {
+  display: none;
+} */
+
+.show {
+  visibility: visible;
+}
+
+.board .body-hor {
+  background-color: #f57b2a;
+  border-top: 3px solid #1370ad;
+  border-bottom: 3px solid #1370ad;
+}
+
+.board .body-ver {
+  background-color: #f57b2a;
+  border-left: 3px solid #1370ad;
+  border-right: 3px solid #1370ad;
+}
+
+.board .missed {
+  background-color: #1370ad;
+}
+
+.board .head-hor {
+  border-left: 3px solid #1370ad;
+}
+
+.board .tail-hor {
+  border-right: 3px solid #1370ad;
+}
+
+.board .head-ver {
+  border-top: 3px solid #1370ad;
+}
+
+.board .tail-ver {
+  border-bottom: 3px solid #1370ad;
+}
+
+.board .hit {
+  background-color: #b10000;
+  border: 3px solid #b10000;
+}
+
+.ship-stat .hit {
+  background-color: #b10000;
+}
+
+.pre-game .buttons {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  font-size: 0.8em;
+  -webkit-box-shadow: 0px -2px 7px 2px #050e14;
+  box-shadow: 0px -2px 7px 2px #050e14;
+}

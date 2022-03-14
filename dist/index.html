@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Russo+One&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>Battleship</title>
+  </head>
+  <body>
+    <nav><h1>battleship</h1></nav>
+    <main>
+      <div class="p1-container"></div>
+      <div class="p2-container"></div>
+      <div class="ship-stat-container">
+        <div>
+          <div class="carrier">
+            <img
+              src="public/images/17aeefb8c9f3bda662b1348bf22d5d00.png"
+              alt=""
+            />
+            <div class="ship-stat">
+              <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <div class="cruiser">
+            <img
+              src="public/images/39a4cb5d675b244c66df5a1aba1a377f.png"
+              alt=""
+            />
+            <div class="ship-stat">
+              <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <div class="battleship">
+            <img
+              src="public/images/307a6eaddcba21056f55eae6830bb444.png"
+              alt=""
+            />
+            <div class="ship-stat">
+              <div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="destroyer">
+            <img
+              src="public/images/e530735c91ba9440e949b9bd5e5cad6c.png"
+              alt=""
+            />
+            <div class="ship-stat">
+              <div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <div class="patrol-boat">
+            <img
+              src="public/images/77180b9b004c3afd6950fd547133cc71.png"
+              alt=""
+            />
+            <div class="ship-stat">
+              <div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div><button class="restart">restart</button></div>
+    </main>
+    <section class="pre-game-container show">
+      <div class="pre-game">
+        <div class="title">
+          <h3>ship placement dialog</h3>
+        </div>
+        <div class="ship-placement">
+          <div class="preview-container"></div>
+          <div class="ships-container">
+            <div class="info">
+              <p>drag the ship and drop it onto the game board to place it.</p>
+              <p>double-click on the ship to change its direction.</p>
+            </div>
+            <div class="carrier">
+              <img
+                src="public/images/17aeefb8c9f3bda662b1348bf22d5d00.png"
+                alt=""
+              />
+            </div>
+            <div class="cruiser">
+              <img
+                src="public/images/39a4cb5d675b244c66df5a1aba1a377f.png"
+                alt=""
+              />
+            </div>
+            <div class="battleship">
+              <img
+                src="public/images/307a6eaddcba21056f55eae6830bb444.png"
+                alt=""
+              />
+            </div>
+            <div class="patrol-boat">
+              <img
+                src="public/images/77180b9b004c3afd6950fd547133cc71.png"
+                alt=""
+              />
+            </div>
+            <div class="destroyer">
+              <img
+                src="public/images/e530735c91ba9440e949b9bd5e5cad6c.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="reset">reset</button>
+          <button class="randomize">randomize</button>
+          <button class="start">start game</button>
+        </div>
+      </div>
+    </section>
+    <section class="notification-container">
+      <div>
+        <h3>notification</h3>
+      </div>
+    </section>
+    <footer><p>thein than hein</p></footer>
+  </body>
+  <script src="main.js"></script>
+</html>
