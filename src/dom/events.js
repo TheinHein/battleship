@@ -142,7 +142,6 @@ const events = (() => {
   }
 
   function addPvpEvt() {
-    console.log("add pvp");
     ele.pvpBtn.addEventListener("click", () => {
       game.setMode("pvp");
       ele.p2Btn.classList.remove("hide");
@@ -151,7 +150,6 @@ const events = (() => {
   }
 
   function addPvcEvt() {
-    console.log("add pvc");
     ele.pvcBtn.addEventListener("click", () => {
       game.setMode("pvc");
       ele.startBtn.classList.remove("hide");
@@ -160,7 +158,6 @@ const events = (() => {
   }
 
   function addNewEvt() {
-    console.log("add new");
     ele.newBtn.addEventListener("click", () => {
       game.setNew();
       ele.newGameContainer.classList.remove("show");
@@ -169,7 +166,6 @@ const events = (() => {
   }
 
   function addP2Evt() {
-    console.log("add p2");
     ele.p2Btn.addEventListener("click", () => {
       game.gotoP2();
       ele.p2Btn.classList.add("hide");
@@ -193,18 +189,15 @@ const events = (() => {
 
   function addRotateEvt() {
     ele.rotateBtn.addEventListener("click", () => {
-      console.log("click");
       if (
         ele.toggle.className === "toggle" ||
         ele.toggle.className === "toggle horizontal"
       ) {
         ele.toggle.className = "toggle vertical";
         game.setRotate("Y");
-        console.log(game.dir);
       } else if (ele.toggle.className === "toggle vertical") {
         ele.toggle.className = "toggle horizontal";
         game.setRotate("X");
-        console.log(game.dir);
       }
     });
   }
