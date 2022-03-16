@@ -36,8 +36,12 @@ const game = {
 
   setNew() {
     this.p1 = new Player();
+    this.p1Fleet = Array.from(fleet);
     if (this.mode === "pvc") this.p2 = new Player("ai");
-    else if (this.mode === "pvp") this.p2 = new Player();
+    else if (this.mode === "pvp") {
+      this.p2 = new Player();
+      this.p2Fleet = Array.from(fleet);
+    }
     this.p1.assignEnemyGameBoard(this.p2.gameBoard);
     this.p2.assignEnemyGameBoard(this.p1.gameBoard);
     this.turn = "p1";

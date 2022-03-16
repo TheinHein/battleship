@@ -13,4 +13,3 @@ import "./images/patrol-boat.png";
 import "./images/logo.png";
 
 game.addEvt();
-console.log(game.subscribers);
