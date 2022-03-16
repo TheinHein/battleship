@@ -1,9 +1,9 @@
 # Battleship
 
-<span><img src="https://media.giphy.com/media/HnzsJgRdJhDXWrOZXt/giphy.gif" width="180px" height="300px"/></span>
-<span><img src="https://media.giphy.com/media/3JGs0YzWAXJ3IYhxJz/giphy.gif" width="180px" height="300px"/></span>
-<span><img src="https://media.giphy.com/media/rHxird4AVBZVO0EiAE/giphy.gif" width="180px" height="300px"/></span>
-<span><p><em>Randomize All Ships.</em></p></span><span><p><em>Play Against Computer On All Devices.</em></p></span>
+<div><img src="https://media.giphy.com/media/xqjok1OgPZHMiT6UM9/giphy.gif" width="364px" height="180px"/></div>
+<span><img src="https://media.giphy.com/media/bahYnUeqN5BL7VmrPH/giphy.gif" width="180px" height="300px"/></span>
+<span><img src="https://media.giphy.com/media/BOCfOlhTVN5BujKwzt/giphy.gif" width="180px" height="300px"/></span>
+<span><p><em>Play with friend.</em></p></span><span><p><em>Mobile friendly.</em></p></span><span><p><em>Randomize the fleet.</em></p></span><span><p><em>Play against computer.</em></p></span>
 
 ## Description
 - This project is part of The Odin Project Self-learning Javascript Curriculum. 
