@@ -297,5 +297,11 @@ const result = solver.solve();
 const c1370ad = new Color(19, 112, 173);
 const solver2 = new Solver(c1370ad);
 const result2 = solver2.solve();
+
+const c012b47 = new Color(1, 43, 71);
+const solver3 = new Solver(c012b47);
+const result3 = solver3.solve();
+
 console.log(result);
 console.log(result2);
+console.log(result3);

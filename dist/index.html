@@ -15,8 +15,8 @@
   <body>
     <nav><h1>battleship</h1></nav>
     <main>
-      <div class="p1-container"></div>
-      <div class="p2-container"></div>
+      <div class="side-display-container"></div>
+      <div class="main-display-container"></div>
       <div class="ship-stat-container">
         <div>
           <div class="carrier">
@@ -24,42 +24,21 @@
               src="public/images/17aeefb8c9f3bda662b1348bf22d5d00.png"
               alt=""
             />
-            <div class="ship-stat">
-              <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-            </div>
+            <div class="ship-stat"></div>
           </div>
           <div class="cruiser">
             <img
               src="public/images/39a4cb5d675b244c66df5a1aba1a377f.png"
               alt=""
             />
-            <div class="ship-stat">
-              <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-            </div>
+            <div class="ship-stat"></div>
           </div>
           <div class="battleship">
             <img
               src="public/images/307a6eaddcba21056f55eae6830bb444.png"
               alt=""
             />
-            <div class="ship-stat">
-              <div>
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-            </div>
+            <div class="ship-stat"></div>
           </div>
         </div>
         <div>
@@ -68,84 +47,69 @@
               src="public/images/e530735c91ba9440e949b9bd5e5cad6c.png"
               alt=""
             />
-            <div class="ship-stat">
-              <div>
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-            </div>
+            <div class="ship-stat"></div>
           </div>
           <div class="patrol-boat">
             <img
               src="public/images/77180b9b004c3afd6950fd547133cc71.png"
               alt=""
             />
-            <div class="ship-stat">
-              <div>
-                <div></div>
-                <div></div>
-              </div>
-            </div>
+            <div class="ship-stat"></div>
           </div>
         </div>
       </div>
       <div><button class="restart">restart</button></div>
     </main>
-    <section class="pre-game-container show">
+    <section class="pre-game-container">
       <div class="pre-game">
         <div class="title">
           <h3>ship placement dialog</h3>
         </div>
         <div class="ship-placement">
           <div class="preview-container"></div>
-          <div class="ships-container">
-            <div class="info">
-              <p>drag the ship and drop it onto the game board to place it.</p>
-              <p>double-click on the ship to change its direction.</p>
+          <div>
+            <span><p>horizontal</p></span>
+            <div class="rotate">
+              <div class="toggle horizontal"></div>
             </div>
-            <div class="carrier">
-              <img
-                src="public/images/17aeefb8c9f3bda662b1348bf22d5d00.png"
-                alt=""
-              />
-            </div>
-            <div class="cruiser">
-              <img
-                src="public/images/39a4cb5d675b244c66df5a1aba1a377f.png"
-                alt=""
-              />
-            </div>
-            <div class="battleship">
-              <img
-                src="public/images/307a6eaddcba21056f55eae6830bb444.png"
-                alt=""
-              />
-            </div>
-            <div class="patrol-boat">
-              <img
-                src="public/images/77180b9b004c3afd6950fd547133cc71.png"
-                alt=""
-              />
-            </div>
-            <div class="destroyer">
-              <img
-                src="public/images/e530735c91ba9440e949b9bd5e5cad6c.png"
-                alt=""
-              />
-            </div>
+            <span><p>vertical</p></span>
           </div>
         </div>
         <div class="buttons">
           <button class="reset">reset</button>
           <button class="randomize">randomize</button>
-          <button class="start">start game</button>
+          <button class="start hide">start game</button>
+          <button class="p2 hide">player 2</button>
         </div>
       </div>
     </section>
+    <section class="new-game-container show">
+      <div class="new-game">
+        <div class="title">
+          <h3>battle ship</h3>
+        </div>
+        <div class="logo">
+          <img
+            src="public/images/99c25df57ce32444b5cb4e5e6ff1c82f.png"
+            alt="battleship logo"
+          />
+        </div>
+        <div class="buttons">
+          <button class="pvp">player vs player</button>
+          <button class="pvc">player vs computer</button>
+          <button class="new">new game</button>
+        </div>
+      </div>
+    </section>
+    <section class="pass-screen-container">
+      <div class="pass-screen">
+        <p>please pass the screen to player 2</p>
+        <button class="continue">continue</button>
+      </div>
+    </section>
     <section class="notification-container">
-      <div>
-        <h3>notification</h3>
+      <div class="notification">
+        <button class="new-game-btn">restart</button>
       </div>
     </section>
     <footer><p>thein than hein</p></footer>

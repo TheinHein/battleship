@@ -33,7 +33,7 @@ export default class GameBoardComponent {
         this.tile = document.createElement("td");
         this.tile.dataset.cord = this.board[i][j].cord;
 
-        if (this.board[i][j].ship && this.type !== "ai") {
+        if (this.board[i][j].ship && this.type !== "clickable") {
           const { loc } = this.board[i][j].ship;
           const hor = loc.every((pos) => pos[0] === loc[0][0]);
           for (let k = 0; k < loc.length; k += 1) {

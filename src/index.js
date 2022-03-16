@@ -10,28 +10,7 @@ import "./images/battleship.png";
 import "./images/cruiser.png";
 import "./images/destroyer.png";
 import "./images/patrol-boat.png";
+import "./images/logo.png";
 
-game.init();
-
-// ele.p2Container.addEventListener("click", () => {
-//   const mediaQuery = window.matchMedia("(min-width: 1024px)");
-
-//   if (!mediaQuery.matches) {
-//     ele.p1Container.classList.add("zoom-in");
-//     ele.p1Container.classList.remove("zoom-out");
-//     ele.p2Container.classList.add("zoom-out");
-
-//     setTimeout(() => {
-//       ele.p1Container.classList.remove("zoom-in");
-//       ele.p1Container.classList.add("zoom-out");
-//       ele.p2Container.classList.remove("zoom-out");
-//       ele.p2Container.classList.add("zoom-in");
-//     }, 1000);
-//   }
-//   setTimeout(() => {
-//     ele.p1Container.classList.remove("zoom-out");
-//     ele.p1Container.classList.remove("zoom-in");
-//     ele.p2Container.classList.remove("zoom-out");
-//     ele.p2Container.classList.remove("zoom-in");
-//   }, 1400);
-// });
+game.addEvt();
+console.log(game.subscribers);
